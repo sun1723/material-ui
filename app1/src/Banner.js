@@ -4,9 +4,9 @@ import './Banner.css';
 export default function Banner({videoSrc}) {
 	return (
 		<Container maxWidth='xl' component = "div" className= "main-banner" style={{padding:0}}>
-			{/* <video autoPlay muted loop id="bg-video">
+			<video autoPlay muted loop id="bg-video">
 				<source src={videoSrc} type="video/mp4" />
-			</video> */}
+			</video>
 			<Typography component="div" className="video-overlay " >
 				<Grid container className="container">
 					<Grid item lg={12}>
