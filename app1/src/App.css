@@ -193,6 +193,10 @@ services
     left: 0;
     right: 0;
 }
+
+/**
+meeting
+*/
 .meeting{
     background-image: url(./meetings-bg.jpg);
     background-position: center center;
