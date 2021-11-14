@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Banner from './Banner';
+import { Carousel_section } from './Carousel_section';
+import Meeting from './Meeting';
+// import bannerVideo from '/public/images/course-video.mp4'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<body>
+  <Header />
+  <Banner videoSrc = {process.env.PUBLIC_URL + "images/course-video.mp4"} />
+  <section class="services">
+    <Carousel_section />
+  </section>
+
+  <section class="meeting" id="meetings">
+    <Meeting />
+  </section>
+</body>
   );
 }
 
